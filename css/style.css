@@ -1,0 +1,1746 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: IRANSans;
+	user-select: none; /* supported by Chrome and Opera */
+}
+a{
+	text-decoration: none !important;
+}
+
+/*/////////////////////////////////////////////////////////
+				end style page index
+*//*/////////////////////////////////////////////////////////*/
+
+
+/*/////////////// start style for item menu ///////////////*/
+ul.dropdown-menu.show{
+	width: 800% !important;
+	border: none !important;
+	border-radius: 15px;
+	box-shadow: 0px 13px 31px -7px rgba(0,0,0,0.31);
+	-webkit-box-shadow: 0px 13px 31px -7px rgba(0,0,0,0.31);
+	-moz-box-shadow: 0px 13px 31px -7px rgba(0,0,0,0.31);
+}
+.dropdown-about .dropdown .dropdown-menu.show{
+	width: 200% !important;
+}
+.navbar ul li {
+	margin-right: 15px;
+	color: #fff !important;
+}
+.navbar ul li a{
+	color: #000 !important;
+	font-size: 16px;
+}
+
+.navbar ul li a:hover{
+	color: #86ba09 !important;
+}
+
+.navbar ul li .dropdown-item:hover{
+	color: #86ba09 !important;
+	transition: all 0.4s ease;
+}
+
+.dropdown ul li a{
+	font-size: 13px !important;
+}
+.dropdown ul li a:hover{
+	background: #fff;
+}
+.dropdown-menu label {
+	margin-left: 10px;
+	font-size: 1.2em;
+	font-weight: bold;
+	padding-bottom: 10px;
+	padding-right: 10px;
+}
+.navbar-toggler-icon{
+	color: #000;
+	margin-top: 5px;
+	font-size: 16px;
+}
+
+.navbar .navbar-nav .dropdown-menu .hover-mege-img{
+	overflow: hidden;
+}
+.navbar .navbar-nav .dropdown-menu .hover-mege-img img {
+	width: 100%;
+    transition: 0.5s all ease-in-out;
+}
+.navbar .navbar-nav .dropdown-menu .hover-mege-img:hover img{
+	transform: scale(1.3);
+}
+/*/////////////// end style for item menu ///////////////*/
+
+
+/*/////////////// start style for icon in menu ///////////////*/
+/*/////////////// start box search animation ///////////////*/
+.navbar ul li form{
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	left: 9.9%;
+	top: 16.5%;
+	padding: 5px;
+	transition: translate(-50%, -50%);
+	border-radius: 50px;
+	border: 4px solid #fff;
+	box-sizing: border-box;
+	background: #fff;
+	transition: 1.5s;
+}
+.navbar ul li form input{
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 5px solid #F5F5F5;
+	width: 100%;
+	height: 52px;
+	line-height: 75px;
+	outline: 0;
+	display: none;
+	font-size: 13px;
+	font-family: IRANSans;
+	border-radius: 25px;
+	padding: 0 40px;
+}
+.navbar ul li form i.bx{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 32px;
+	height: 32px;
+	box-sizing: border-box;
+	border-radius: 25%;
+	text-align: center;
+	font-size: 22px;
+	transition: 1.5s;
+	color: black;
+	padding: 15px;
+}
+.navbar ul li form:hover{
+	width: 200px;
+	cursor: pointer;
+
+}
+.navbar ul li form:hover input{
+	display: block;
+}
+/*/////////////// end box search animation ///////////////*/
+
+/*/////////////// start style modal ///////////////*/
+.navbar .modal .modal-header{
+	background-color: #86ba09;
+	display: block;
+}
+.navbar .modal .signin_dialog .modal-content{
+	background-color: transparent;
+}
+.navbar .modal .signin_dialog .modal-body{
+	background-color: #fff;
+}
+.navbar .modal .modal-header .btn-close{
+	color: #fff !important;
+}
+.navbar .modal .modal-body .social_login {
+	text-align: center;
+}
+.navbar .modal .modal-body .social_login .social_log {
+	list-style: none;
+	display: flex;
+	padding: 0;
+	justify-content: center;
+}
+.navbar .modal .modal-body .social_login .social_log a {
+	margin: 0 6px;
+}
+.navbar .modal .modal-body .social_login .social_log a i {
+	width: 40px;
+}
+.navbar .modal .modal-body .social_login p {
+	color: #8c8c8c;
+	font-size: 14px;
+}
+.navbar .modal .signin_modal .nav-tabs .nav-link{
+	background-color: #e5e5e5;
+	border-radius: 0%;
+	font-weight: 600;
+	border-color: #fff;
+	padding: 18px;
+}
+.navbar .modal .signin_modal .nav-tabs .nav-link.active{
+	background-color: #fff;
+}
+.navbar .modal .signin_modal .nav-tabs .nav-item {
+	width: 46.7%;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+.navbar .modal .signin_modal .nav-tabs{
+	border-bottom: none;
+}
+.navbar .modal .signin_tab{
+	padding: 0 3rem;
+}
+.navbar .modal .signin_tab button {
+	background-color: #000 !important;
+}
+.navbar .modal .signin_tab button:hover{
+	background-color: #86ba09 !important;
+	color: #fff !important;
+}
+.navbar .modal .signin_tab button:active{
+	background-color: blue !important;
+	color: #fff !important;
+}
+.navbar .modal .signin_tab input.form-control.button{
+	font-size: 12px;
+	color: #8c8c8c;
+	height: 40px;
+}
+.navbar .modal .signin_tab input::placeholder{
+	font-size: 12px;
+}
+.navbar .modal .signin_tab .signin_link {
+	text-align: center;
+	color: #8c8c8c;
+	font-size: 13px;
+	margin-top: 0.5rem;
+}
+.navbar .modal .signin_tab .forgot_link{
+	text-align: right;
+	font-size: 12px;
+}
+/*/////////////// end style modal///////////////*/
+
+
+/*/////////////// start media queries for menu ///////////////*/
+@media only screen and (max-width:991px){
+	ul.dropdown-menu.show{
+		width: 500px !important;
+	}
+}
+@media only screen and (max-width:655px){
+	ul.dropdown-menu.show{
+		width: 500px !important;
+	}
+}
+@media only screen and (max-width:555px){
+	ul.dropdown-menu.show{
+		width: 300px !important;
+	}
+}
+@media only screen and (max-width:355px){
+	ul.dropdown-menu.show{
+		width: 200px !important;
+	}
+}
+
+@media only screen and (max-width:991px){
+	.dropdown-about .dropdown .dropdown-menu.show{
+		width: 500px !important;
+	}
+}
+@media only screen and (max-width:655px){
+	.dropdown-about .dropdown .dropdown-menu.show{
+		width: 500px !important;
+	}
+}
+@media only screen and (max-width:555px){
+	.dropdown-about .dropdown .dropdown-menu.show{
+		width: 300px !important;
+	}
+}
+@media only screen and (max-width:355px){
+	.dropdown-about .dropdown .dropdown-menu.show{
+		width: 200px !important;
+	}
+}
+
+/*/////////////// end media queries for menu ///////////////*/
+
+/*/////////////// end style for icon in menu ///////////////*/
+
+
+/*/////////////// start style carousel ///////////////*/
+.home .carousel-item{
+	min-height: 100vh;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+}
+.home .carousel-item:before{
+	content: '';
+	position: absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	z-index: -1;
+}
+.home .carousel-item .container{
+	position: absolute;
+	left: 50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+.home .carousel-item h2{
+	font-size: 70px;
+	color: #ffffff;
+	margin:0 0 10px;
+	opacity: 0;
+}
+.home .carousel-item p{
+	font-size: 20px;
+	margin:0;
+	color: #eeeeee;
+	opacity:0;
+}
+.home .carousel-item.active h2{
+	animation: fadeInLeft 0.5s ease forwards;
+}
+.home .carousel-item.active p{
+	animation: fadeInLeft 0.5s ease forwards;
+}
+.home .carousel-item.active button{
+	animation: fadeInRight 0.5s ease forwards;
+	border-radius: 50px;
+	background-color: #86ba09;
+	padding: 20px 60px;
+}
+.home .carousel-item.active button:hover{
+	background-color: #ffffff;
+	color: green;
+}
+.home .carousel-item.active p{
+	animation: fadeInRight 0.5s ease forwards;
+}
+
+@keyframes fadeInLeft{
+	0%{
+		opacity: 0;
+		transform: translateX(-30px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+@keyframes fadeInRight{
+	0%{
+		opacity: 0;
+		transform: translateX(30px);
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+.home .carousel-controls{
+	position: absolute;
+	left: 50%;
+	bottom: 40px;
+	z-index: 10;
+	transform: translateX(-50%);
+}
+
+.home .carousel-indicators{
+	position: relative;
+	margin:0;
+}
+
+.home .carousel-indicators li{
+	height: 70px;
+	width: 70px;
+	margin:0 5px;
+	border-radius: 50%;
+	background-position: center;
+	background-size: cover;
+	border:3px solid transparent;
+	transition: all 0.3s ease;
+}
+.home .carousel-indicators li.active{
+	border-color: #ffffff;
+	transform: scale(1.2);
+}
+
+.home .carousel-control-next,
+.home .carousel-control-prev{
+	height: 60px;
+	width: 60px;
+	opacity: 1;
+	z-index: 3;
+	top: 50%;
+	transform: translateY(-50%);
+	border-radius: 50%;
+	transition: all 0.3s ease;
+}
+.home .carousel-control-next:hover,
+.home .carousel-control-prev:hover{
+   box-shadow: 0 0 10px #ffffff;
+}
+.home .carousel-control-next img,
+.home .carousel-control-prev img{
+   width: 30px;
+}
+.home .carousel-control-next{
+	right: -90px;
+}
+.home .carousel-control-prev{
+	left: -90px;
+}
+
+/*for responsive carousel*/
+@media(max-width: 767px){
+  .home .carousel-control-next,
+  .home .carousel-control-prev{
+  	display: none;
+  }
+  .home .carousel-indicators li{
+  	height: 60px;
+  	width: 60px;
+  }
+  .home .carousel-item h2{
+  	font-size: 45px;
+  }
+  .home .carousel-item p{
+  	font-size: 22px;
+  }
+}
+/*/////////////// end style carousel transition: transform 1s, filter 2s ease-in-out;
+	filter: blur(2px);
+	transform: scale(0.9);///////////////*/
+
+/*/////////////// start style box Discount filter: blur(0);
+  	transform: scale(1);///////////////*/
+.card .card-img {
+	overflow: hidden;
+}
+.card .card-img img {
+	width: 100%;
+    transition: 0.5s all ease-in-out;
+}
+.card .card-img:hover  img {
+	transform: scale(1.2);
+	transition: all 1.5s ease;
+}
+
+@media (min-width: 567px) and (max-width: 768px){
+	main .size-media-1{
+		margin-right: 150px;
+		padding-top: 0px !important;
+	}
+}
+
+/*/////////////// end  style box Discount ///////////////*/
+
+
+
+/*/////////////// start style end Multiple Items Carousel slide ///////////////*/
+.card-img-custom {
+	position: relative;
+}
+
+.card-img-custom .overlay-img-card {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	color: #fff;
+}
+.card-img-custom .overlay-img-card .top small {
+	background-color: #003d60;
+	border-radius: 5px;
+	font-weight: 300;
+}
+.card-img-custom .overlay-img-card .bottom a {
+	font-size: 13px;
+	color: #fff;
+	opacity: 0.5;
+}
+.card-img-custom .overlay-img-card .bottom a:hover {
+	opacity: 1;
+}
+
+.overlay4{
+	position: absolute;
+	left: 0;
+	width: 100%;
+	top: 40%;
+	opacity: 0;
+	height: 100%;
+	visibility: hidden;
+	transition: 0.3s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 99;
+}
+.overlay4 a{
+	transition: 0.3s;
+	opacity: 0;
+	visibility: visible;
+	border-radius: 15px;
+	font-size: 13px;
+	color: #86ba09 !important;
+	background: #fff;
+	font-weight: 300;
+	transform: scale(0);
+	transition-delay: 0.1s;
+	border: 1px solid #2980b9;
+}
+.hover-card .overlay4 a:hover{
+	color: #fff !important;
+    background: #86ba09;
+	border: 1px solid #2980b9;
+}
+.hover-card:hover .overlay4{
+	opacity: 1;
+	visibility: visible;
+}
+.hover-card:hover .overlay4 a{
+	color: #fff;
+	transform: scale(1);
+	opacity: 1;
+	visibility: visible;
+}
+.card{
+	background-color: transparent;
+	border-radius: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 576px){
+	main .size-media{
+		width: 400px;
+	}
+}
+/*/////////////// end style end Multiple Items Carousel slide ///////////////*/
+
+
+
+/*/////////////// start style end Multiple Items Carousel two slide ///////////////*/
+/*
+.card .iconimg{
+	display: flex;
+	position: absolute;
+    background-color: transparent;
+    top: 250px;
+    left: 40%;
+    width: 66px;
+    height: 66px;
+}
+*/
+.hover {
+	overflow: hidden;
+	position: relative;
+	padding-bottom: 60%;
+}
+.hover-overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 90;
+	transition: all 0.4s;
+}
+.hover img {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all 0.3s;
+}
+.hover-content {
+	position: relative;
+	z-index: 99;
+}
+
+.hover-5::after {
+	content: '';
+	width: 100%;
+	height: 10px;
+	background: #47c650;
+	position: absolute;
+	bottom: -10px;
+	left: 0;
+	display: block;
+	transition: all 0.3s;
+	z-index: 999;
+}
+.hover-5 .hover-overlay {
+	background: rgba(0, 0, 0, 0.4);
+}
+
+.hover-5-title {
+	position: absolute;
+	bottom: 1rem;
+	left: 0;
+	transition: all 0.3s;
+	padding: 2rem 3rem;
+	z-index: 99;
+}
+.hover-5-title span {
+	transition: all 0.4s;
+	opacity: 0;
+	color: #47c650;
+}
+
+.hover-5:hover .hover-overlay {
+	background: rgba(0, 0, 0, 0.8);
+}
+.hover-5:hover .hover-5-title {
+	bottom: 0;
+}
+.hover-5:hover .hover-5-title span {
+	opacity: 1;
+}
+.hover-5:hover::after {
+	bottom: 0;
+}
+@media (min-width: 576px) and (max-width: 768px) {
+	.media-card1{
+		margin-right: 150px;
+	}
+}
+/*/////////////// end style end Multiple Items Carousel  two slide ///////////////*/
+
+
+/*/////////////// start style Blog Carousel slide ///////////////*/
+.card-body .card-title a{
+    font-size: 16px;
+    font-weight: 600;
+	color: #121212;
+    line-height: 24px;
+}
+.author small{
+    color: #86ba09;
+    font-size: 14px;
+    position: relative;
+    display: inline-block;
+}
+.card-body p{
+    margin: 15px 0 20px;
+    line-height: 24px;
+    color: #666666;
+	font-size: 14px;
+}
+/* for responsive */
+@media (min-width: 320px) and (max-width: 450px){
+	main .carousel_slide .main-carousel .cell .card{
+		width: 15rem !important;
+	}
+}
+/* for responsive */
+
+/*/////////////// end style Blog Carousel slide ///////////////*/
+
+
+
+/*/////////////// start style scrole bar ///////////////*/
+::-webkit-scrollbar{
+	width: 10px;
+}
+::-webkit-scrollbar-track{
+	background: #CECEFE;
+	border-radius: 50px;
+}
+::-webkit-scrollbar-thumb{
+	background: #3F51B5;
+	border-radius: 50px;
+}
+/*/////////////// end style scrole bar ///////////////*/
+
+/*/////////////////////////////////////////////////////////
+				end style page index
+*//*/////////////////////////////////////////////////////////*/
+
+
+
+/*/////////////////////////////////////////////////////////
+				START style page ABOUT
+*//*/////////////////////////////////////////////////////////*/
+
+/*/////////////// START   IMAGE DOWN HEADER ///////////////
+@media screen and (max-width: 768px) {
+	.carousel {
+	  display: none;
+	}
+}
+*/
+@media (min-width: 320px) and (max-width: 768px){
+	.carousel-custom{
+		display: none;
+	}
+}
+/*/////////////// START   IMAGE DOWN HEADER ///////////////*/
+
+
+/*/////////////// START ABOUT US ///////////////*/
+.container .card-horizontal .card-title{
+	color: #121212;
+	font-size: 32px;
+	font-weight: 500;
+	position: relative;
+
+}
+.container .card-horizontal .hover_img{
+	overflow: hidden;
+}
+.container .card-horizontal .hover_img img{
+    transition: 0.5s all ease-in-out;
+}
+.container .card-horizontal .hover_img:hover img{
+	transform: scale(1.3);
+}
+/*/////////////// END ABOUT US ///////////////*/
+
+
+/*/////////////// START Our services ///////////////*/
+.our-services .our-services1 .card{
+	border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  	padding: 14px 80px 18px 36px;
+  	cursor: pointer;
+}
+.our-services .our-services1 .card:hover{
+	transform: scale(1.09);
+  	box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+.our-services .card .badge{
+	position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 12px 15px;
+    border-radius: 0 0 0 26px;
+    font-size: 14px;
+}
+.our-services .card{
+	border:0px;
+	height: 100%;
+}
+.our-services .our-services1 .card h5{
+	text-transform: capitalize;
+	font-size: 18px;
+    font-weight: 500;
+    margin: 5px 0 20px;
+}
+.our-services .our-services1 .card .card-text{
+	line-height: 170%;
+	font-size: 14px;
+}
+.our-services .card .card-title{
+	font-weight: bold;
+}
+/*/////////////// END ABOUT US ///////////////*/
+
+
+
+/*/////////////// STRAT CARD DOWN Our services ///////////////*/
+.card-down .card .card-footer button{
+	padding: 9px 70px;
+	font-size: 14px;
+}
+.card-down .card .card-footer button:hover{
+	transition: all 0.8s ease;
+	background-color: #86ba09;
+	color: #fff;
+}
+
+/*/////////////// END CARD DOWN Our services ///////////////*/
+
+
+
+/*/////////////// STRAT box meet our team ///////////////*/
+div.box{
+	padding: 0;
+}
+.box{
+	position: relative;
+	width: 450px;
+	perspective: 9000px;
+	transition: all 0.5s ease-in-out 0.5s;
+	margin-right: 390px;
+}
+.box:hover{
+	transform: scale(1.1);
+	box-shadow: 1px 2px 10px 5px solid #000;
+}
+.box .box-img{
+	transform: rotateY(0);
+	transition: all 0.5s ease-in-out 0s;
+}
+
+.box .box-img img{
+	width: 450px;
+	height: 480px;
+	border: 2px solid #000;
+	border-radius: 20px;
+}
+.box .content{
+	color: white;
+	background: rgba(0,0,0,0.8);
+	top: 0;
+	Left: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	padding: 90px 20px;
+	box-sizing: border-box;
+	text-align: center;
+	border-radius: 10px;
+	transform: rotateY(90deg);
+	transition: all 0.5s ease-in-out 0s;
+}
+
+
+.box:hover .content{
+	transform: rotateY(0);
+}
+.box .content p{
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	padding: 20px 0;
+	margin: 0 25px;
+}
+
+.box .button{
+	background: none;
+	top: 0;
+	Left: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	padding: 360px 50px;
+	box-sizing: border-box;
+	text-align: center;
+	align-items: center;
+	transform: rotateY(90deg);
+	transition: all 0.5s ease-in-out 0s;
+}
+
+.box:hover .button{
+	transform: rotateY(0);
+}
+.box .button i{
+	list-style: none;
+	padding: 15px 0;
+}
+.box .button i{
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+	border: 1px solid transparent;
+	padding: 20px 40px;
+}
+/*/////////////// END box meet our team ///////////////*/
+
+
+/*/////////////////////////////////////////////////////////
+				END style page ABOUT
+*//*/////////////////////////////////////////////////////////*/
+
+li.slick-active button {
+	transition: all ease 0.3s;
+	background-color: #0c1946 !important;
+}
+
+.overlay4 {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	top: 0;
+	background: rgba(0, 0, 0, 0.7);
+	opacity: 0;
+	height: 100%;
+	visibility: hidden;
+	transition: 0.3s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 99;
+}
+.overlay4 a {
+	transition: 0.3s;
+	opacity: 0;
+	visibility: visible;
+	border-radius: 15px;
+	font-size: 13px;
+	color: #fff !important;
+	background: #2980b9;
+	font-weight: 300;
+	transform: scale(0);
+	transition-delay: 0.1s;
+	border: 1px solid #2980b9;
+}
+.hover-card .overlay4 a:hover {
+	color: #2980b9 !important;
+	background: #fff;
+	border: 1px solid #2980b9;
+}
+
+.hover-card:hover .overlay4 {
+	opacity: 1;
+	visibility: visible;
+}
+.hover-card:hover .overlay4 a {
+	color: #fff;
+	transform: scale(1);
+	opacity: 1;
+	visibility: visible;
+}
+.partners .card {
+	transition: 0.3s;
+	border-radius: 10px;
+}
+.partners .card:hover {
+	background: #f6f6f6;
+}
+
+
+
+
+
+.search input{
+	border: 1px solid #eee !important;
+	width: 80%;
+}
+/*
+.search input:focus {
+    box-shadow: 10px 10px #757575;
+}
+*/
+.search a{
+	background-color: #ff5a60 !important;
+	color: #fff !important;
+	border: 1px solid #ff5a60;
+	font-weight: 300;
+	outline: none;
+}
+.search a:hover{
+	transform: 0.3s;
+	background-color: #fff !important;
+	color: #ff5a60 !important;
+}
+.search input::placeholder{
+	font-size: 13px;
+	font-weight: 300;
+}
+.search-2{
+	position: relative;
+}
+.search-2 a{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+
+}
+.category-p a{
+	transition: 0.3s;
+	font-size: 14px;
+}
+.category-p a:hover{
+	color: #ff5a60 !important;
+	margin-right: 8px;
+}
+.category-p small:hover{
+	color: #ff5a60 !important;
+	margin-right: 8px;
+}
+.card .card-body .card-title{
+	font-size: 18px;
+	font-weight: 700;
+}
+.card .card-body .card-small{
+	line-height: 200%;
+}
+.qu {
+	border-radius: 15px;
+	border-right: 4px solid #ff5a60 !important;
+	border-left: 4px solid #ff5a60 !important;
+}
+.right-arrow p{
+	color: #8493a2;
+	transition: 0.2s;
+}
+.right-arrow p:hover {
+	color: #F9474D;
+}
+.fa-star {
+      color: #f8c31d;
+      cursor: pointer;
+}
+.rounde-2{
+	border-radius: 15px;
+}
+@media (min-width: 768px) {
+	.review img {
+		width: 9rem !important;
+		border-radius: 5px;
+	}
+}
+.review2 input {
+	border: 1px solid #eee;
+}
+.review2 input::placeholder {
+	font-size: 13px;
+	font-weight: 300;
+}
+.review2 textarea::placeholder {
+	font-size: 13px;
+	font-weight: 300;
+}
+.review2 a{
+	background: #ff5a60 !important;
+	color: #fff !important;
+	font-size: 15px;
+}
+.op-font option {
+	font-size: 14px;
+	font-weight: 300;
+}
+.op-font select {
+	border: 1px solid #eee;
+	font-size: 14px;
+}
+.hover-man .overlay2{
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.3s;
+}
+.hover-man:hover .overlay2{
+	opacity: 1;
+	visibility: visible;
+}
+.listing img {
+	width: 20em;
+	border-radius: 10px;
+}
+.listing {
+	border-radius: 10px;
+	transition:0.3s;
+}
+.listing:hover {
+	background: #f6f6f6;
+}
+.overlay-category:hover {
+	box-shadow: 0 0 25px rgba(0, 0, 0, 0.2)!important;
+	background: 0 0 !important;
+}
+.overlay-category .overlay2 a{
+	background:rgba(0, 0, 0, 0.3);
+}
+.overlay-category .overlay2 a:hover{
+	background: #292929;
+}
+.paging .nav-item a{
+	transition: 0.3s;
+}
+.paging .nav-item a:hover,
+.paging .nav-item a:hover i {
+	background-color: #ff5a60 !important;
+	color: #fff !important;
+}
+/*/////////////////////////////////////////////////////////
+				START style page BLOG
+*//*/////////////////////////////////////////////////////////*/
+
+
+
+
+
+/*/////////////////////////////////////////////////////////
+				start style page CONTACT US
+*//*/////////////////////////////////////////////////////////*/
+.card .card-body .size-custom i {
+	font-size: 20px;
+}
+.card .card-body .size-custom a{
+	font-size: 14px;
+}
+
+
+.send-form input,textarea{
+	border: 1px solid #eee !important;
+}
+.send-form input::placeholder{
+	font-size: 13px;
+	font-weight: 300;
+}
+.send a {
+    background: #ff5a60 !important;
+    color: #fff !important;
+    font-size: 15px;
+}
+/*/////////////////////////////////////////////////////////
+				end style page CONTACT US
+*//*/////////////////////////////////////////////////////////*/
+
+
+
+/*/////////////////////////////////////////////////////////
+				start style page shop
+*//*/////////////////////////////////////////////////////////*/
+
+
+/*///////// start style slidebar left //////////*/
+.card-body .search .sidebar li a{
+	background: none !important;
+	border: 0;
+	color: #000 !important;
+}
+.card-body .search .bg-item a{
+	background: none !important;
+	border: 0;
+	color: #000 !important;
+}
+.card-body .search .sidebar .has-submenu .submenu{
+	font-size: 14px;
+	color: white !important;
+}
+.card-body .search .sidebar .has-submenu .submenu li a:hover{
+	color: #86ba09 !important;
+}
+.card-body .search .sidebar li i{
+	font-size: 10px;
+}
+.card-body .search .bg-item a i{
+	font-size: 10px;
+}
+
+.debug {
+	color: #9b59b6;
+	font-family: monospace;
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate3d(-50%, -50%, 0);
+	z-index: 100;
+	font-size: 3vw;
+}
+.circle {
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	background-color: #9b59b6;
+	border-radius: 50%;
+	width: 60%;
+	height: 60%;
+	padding-bottom: 25%;
+	transform: translate3d(-50%, -50%, 0);
+	box-shadow: 0 0 10px rgba(#000, 0.5);
+}
+.circle:before {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    background-color: #ecf0f1;
+    border-radius: 50%;
+    top: 5%;
+    left: 5%;
+    box-shadow: inset 0 0 10px rgba(#000, 0.5);
+}
+.dot {
+    position: absolute;
+    width: 5%;
+    height: 50%;
+    left: 47.5%;
+    top: 0;
+    transform: rotate(0deg);
+    transform-origin: center bottom;
+}
+.dot:before {
+	content: "";
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px #000;
+    width: 200%;
+    transform: translate3d(-25%, -25%, 0);
+    height: 0;
+    padding-bottom: 200%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+/*///////// end style slidebar left //////////*/
+/*/////////////////////////////////////////////////////////
+				end style page shop
+*//*/////////////////////////////////////////////////////////*/
+
+
+
+/*/////////////////////////////////////////////////////////
+				start style page buy product
+*//*/////////////////////////////////////////////////////////*/
+
+/*/////////////////////// start card buy prodcut///////////////////////////////////*/
+/* for title box product */
+.card .buy-product .card-body .card-title{
+	top: -40px;
+	font-size: 20px;
+	font-weight: bold;
+}
+/* for title box product */
+
+
+/* for icon share in social media */
+.card .buy-product .card-body .share i strong{
+	font-size: 14px;
+}
+.card .buy-product .card-body .share i{
+	font-size: 16px;
+}
+/* for icon share in social media */
+
+
+/* for start Score and comment*/
+.card .buy-product .card-body .star .hover-comment:hover{
+	color: #86ba09 !important;
+}
+.card .buy-product .card-body .star .hover-comment a:hover{
+	color: #86ba09 !important;
+}
+/* for start Score and comment*/
+
+
+
+/* for price product*/
+.card .buy-product .card-body .price strong{
+	color: #86ba09;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 600;
+}
+.card .buy-product .card-body .price a{
+	display: inline-block;
+    color: #f7525a;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.card .buy-product .card-body .price del{
+	text-decoration: line-through;
+    font-weight: 300;
+    font-size: 20px;
+}
+/* for price product*/
+
+/* for box افزون کیلو*/
+.card .card-body .box-chart {
+	position: relative;
+	width: 10%;
+	height: 50px;
+	border-radius: 40px;
+	border: 2px solid #C0C0C0;
+	transition: 0.5s;
+}
+.card .card-body .box-chart:hover{
+	width: 120px;
+	border: 2px solid black;
+}
+.card .card-body .box-chart .next{
+	position: absolute;
+	top: 50%;
+	right: 30px;
+	display: block;
+	width: 12px;
+	height: 12px;
+	border-top: 2px solid #000;
+	border-left: 2px solid #000;
+	z-index: 1;
+	transform: translateY(-50%) rotate(135deg);
+	cursor: pointer;
+	opacity: 0;
+	transition: 0.5s;
+}
+.card .card-body .box-chart:hover .next{
+	opacity: 1;
+	right: 20px;
+}
+
+
+.card .card-body .box-chart .prev{
+	position: absolute;
+	top: 50%;
+	left: 30px;
+	display: block;
+	width: 12px;
+	height: 12px;
+	border-top: 2px solid #000;
+	border-left: 2px solid #000;
+	z-index: 1;
+	transform: translateY(-50%) rotate(315deg);
+	cursor: pointer;
+	opacity: 0;
+	transition: 0.5s;
+}
+.card .card-body .box-chart:hover .prev{
+	opacity: 1;
+	left: 20px;
+}
+
+.card .card-body .box-chart #box span{
+	position: absolute;
+	display: block;
+	top: 5px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: center;
+	display: none;
+	color: #00deff;
+	font-size: 24px;
+	font-weight: 700;
+	user-select: none;
+}
+.card .card-body .box-chart #box span:nth-child(1){
+	display: initial;
+}
+/* for box افزون کیلو*/
+
+
+/* for button افزون به سبد خرید*/
+.card .card-body #holder{
+	user-select: -moz-none;
+  	-khtml-user-select: none;
+  	-webkit-user-select: none;
+  	background: white;
+  	padding: 10px;
+  	width: 250px;
+  	margin: 0 auto;
+  	position: relative;
+  	top: 50%;
+  	transform: translateY(-65%);
+  	border-radius: 2px;
+}
+
+
+
+.card .card-body #holder .button{
+	background: #86ba09;
+  	margin : 20px auto;
+  	width : 200px;
+  	height : 50px;
+  	overflow: hidden;
+  	text-align : center;
+  	transition : .2s;
+  	cursor : pointer;
+  	border-radius: 3px;
+  	box-shadow: 0px 1px 2px rgba(0,0,0,.2);
+}
+
+.card .card-body #holder .button .btnTwo {
+	position : relative;
+	width : 200px;
+	height : 100px;
+	margin-top: -100px;
+	padding-top: 2px;
+	background : #26A69A;
+	left : -250px;
+	transition : .3s;
+}
+.card .card-body #holder .button .btnText {
+	color : white;
+	transition : .3s;
+}
+
+.card .card-body #holder .button .btnText2 {
+	margin-top : 55px;
+	margin-right : -130px;
+	color : #FFF;
+}
+
+.card .card-body #holder .button:hover .btnTwo{ /*When hovering over .button change .btnTwo*/
+	left: -130px;
+}
+.card .card-body #holder .button:hover .btnText{ /*When hovering over .button change .btnText*/
+	margin-left : 65px;
+}
+
+.card .card-body #holder .button:active { /*Clicked and held*/
+	box-shadow: 0px 5px 6px rgba(0,0,0,0.3);
+}
+/* for button افزون به سبد خرید*/
+
+
+/* for icon heart*/
+/*
+.card .icon a{
+	position: absolute;
+	transform: translate(-50%, -50%);
+	background: #fff;
+	width: 200px;
+	height: 75px;
+	top: 98%;
+	left: 95%;
+	border-radius: 75px;
+	line-height: 75px;
+	text-align: center;
+	font-size: 20px;
+	text-decoration: none;
+	color: #262626;
+	transition: 0.5s;
+	text-transform: uppercase;
+}
+
+.card .icon a.active{
+	background: transparent;
+	color: #fff;
+}
+
+.card .icon a:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #ff0047;
+	width: 50%;
+	height: 100%;
+	transition: 0.5s;
+	z-index: -1;
+	transform: translateX(-200px) rotate(-325deg);
+	opacity: 0;
+	visibility: hidden;
+}
+
+.card .icon a.active:before{
+	left: 30.5px;
+	transform: translateX(0px) rotate(35deg);
+	border-bottom-left-radius: 75px;
+	border-top-left-radius: 75px;
+	opacity: 1;
+	visibility: visible;
+}
+
+.card .icon a:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #ff0047;
+	width: 50%;
+	height: 100%;
+	transition: 0.5s;
+	z-index: -1;
+	transform: translateX(200px) rotate(325deg);
+	opacity: 0;
+}
+
+.card .icon a.active:after{
+	right: 30.5px;
+	transform: translateX(0px) rotate(-35deg);
+	border-bottom-right-radius: 75px;
+	border-top-right-radius: 75px;
+	opacity: 1;
+}
+*/
+
+
+
+.card .icon #main-content{
+	display: flex;
+  	width: 3vw;
+  	height: 10vh;
+  	background: white;
+  	align-items: center;
+  	justify-content: center;
+  	text-align: center;
+}
+
+.card .icon #main-content svg{
+	cursor: pointer;
+  	overflow: visible;
+  	width: 60px;
+}
+
+.card .icon #main-content svg #heart{
+	transform-origin: center;
+ 	animation: animateHeartOut 0.3s linear forwards;
+}
+
+.card .icon #main-content svg #main-circ {
+	transform-origin: 29.5px 29.5px;
+}
+
+.card .icon #main-content #checkbox {
+	display: none;
+}
+
+.card .icon #main-content #checkbox:checked + label svg #heart {
+	transform: scale(0.2);
+	fill: #e2264d;
+	animation: animateHeart 0.3s linear forwards 0.25s;
+}
+
+.card .icon #main-content #checkbox:checked + label svg #main-circ {
+	transition: all 2s;
+	animation: animateCircle 0.3s linear forwards;
+	opacity: 1;
+}
+
+.card .icon #main-content #checkboxs:checked + label svg #grp1 {
+	opacity: 1;
+	transition: 0.1s all 0.3s;
+}
+
+.card .icon #main-content #checkboxs:checked + label svg #grp1 #oval1 {
+	transform: scale(0) translate(0, -30px);
+	transform-origin: 0 0 0;
+	transition: 0.5s transform 0.3s;
+}
+
+.card .icon #main-content #checkboxs:checked + label svg #grp1 #oval2 {
+	transform: scale(0) translate(10px, -50px);
+	transform-origin: 0 0 0;
+	transition: 1.5s transform 0.3s;
+}
+
+.card .icon #main-content #checkboxs:checked + label svg #grp2 {
+	opacity: 1;
+	transition: 0.1s all 0.3s;
+}
+
+.card .icon #main-content #checkboxs:checked + label svg #grp2 #oval1 {
+	transform: scale(0) translate(30px, -15px);
+	transform-origin: 0 0 0;
+	transition: 0.5s transform 0.3s;
+}
+
+.card .icon #main-content #checkboxs:checked + label svg #grp2 #oval2 {
+	transform: scale(0) translate(60px, -15px);
+	transform-origin: 0 0 0;
+	transition: 1.5s transform 0.3s;
+}
+
+.card .icon #main-content #checkboxs:checked + label svg #grp3 {
+	opacity: 1;
+	transition: 0.1s all 0.3s;
+}
+
+.card .icon #main-content #checkboxs:checked + label svg #grp3 #oval1 {
+	transform: scale(0) translate(30px, 0px);
+	transform-origin: 0 0 0;
+	transition: 0.5s transform 0.3s;
+}
+
+.card .icon #main-content #checkboxs:checked + label svg #grp3 #oval2 {
+	transform: scale(0) translate(60px, 10px);
+	transform-origin: 0 0 0;
+	transition: 1.5s transform 0.3s;
+}
+
+.card .icon #main-content #checkboxs:checked + label svg #grp4 {
+	opacity: 1;
+	transition: 0.1s all 0.3s;
+}
+
+.card .icon #main-content #checkboxs:checked + label svg #grp4 #oval1 {
+	transform: scale(0) translate(30px, 15px);
+	transform-origin: 0 0 0;
+	transition: 0.5s transform 0.3s;
+}
+
+.card .icon #main-content #checkboxs:checked + label svg #grp4 #oval2 {
+	transform: scale(0) translate(40px, 50px);
+	transform-origin: 0 0 0;
+	transition: 1.5s transform 0.3s;
+}
+
+.card .icon #main-content #checkboxs:checked + label svg #grp5 {
+	opacity: 1;
+	transition: 0.1s all 0.3s;
+}
+
+.card .icon #main-content #checkboxs:checked + label svg #grp5 #oval1 {
+	transform: scale(0) translate(-10px, 20px);
+	transform-origin: 0 0 0;
+	transition: 0.5s transform 0.3s;
+}
+
+.card .icon #main-content #checkboxs:checked + label svg #grp5 #oval2 {
+	transform: scale(0) translate(-60px, 30px);
+	transform-origin: 0 0 0;
+	transition: 1.5s transform 0.3s;
+}
+
+.card .icon #main-content #checkboxs:checked + label svg #grp6 {
+	opacity: 1;
+	transition: 0.1s all 0.3s;
+}
+
+.card .icon #main-content #checkboxs:checked + label svg #grp6 #oval1 {
+	transform: scale(0) translate(-30px, 0px);
+	transform-origin: 0 0 0;
+	transition: 0.5s transform 0.3s;
+}
+
+.card .icon #main-content #checkboxs:checked + label svg #grp6 #oval2 {
+	transform: scale(0) translate(-60px, -5px);
+	transform-origin: 0 0 0;
+	transition: 1.5s transform 0.3s;
+}
+
+.card .icon #main-content #checkboxs:checked + label svg #grp7 {
+	opacity: 1;
+	transition: 0.1s all 0.3s;
+}
+
+.card .icon #main-content #checkboxs:checked + label svg #grp7 #oval1 {
+	transform: scale(0) translate(-30px, -15px);
+	transform-origin: 0 0 0;
+	transition: 0.5s transform 0.3s;
+}
+.card .icon #main-content #checkboxs:checked + label svg #grp7 #oval2 {
+	transform: scale(0) translate(-55px, -30px);
+	transform-origin: 0 0 0;
+	transition: 1.5s transform 0.3s;
+}
+
+.card .icon #main-content #checkboxs:checked + label svg #grp2 {
+	opacity: 1;
+	transition: 0.1s opacity 0.3s;
+}
+.card .icon #main-content #checkboxs:checked + label svg #grp3 {
+	opacity: 1;
+	transition: 0.1s opacity 0.3s;
+}
+
+.card .icon #main-content #checkboxs:checked + label svg #grp4 {
+	opacity: 1;
+	transition: 0.1s opacity 0.3s;
+}
+
+.card .icon #main-content #checkboxs:checked + label svg #grp5 {
+	opacity: 1;
+	transition: 0.1s opacity 0.3s;
+}
+.card .icon #main-content #checkboxs:checked + label svg #grp6 {
+	opacity: 1;
+	transition: 0.1s opacity 0.3s;
+}
+.card .icon #main-content #checkboxs:checked + label svg #grp7 {
+	opacity: 1;
+	transition: 0.1s opacity 0.3s;
+}
+@keyframes animateCircle {
+	40% {
+	  transform: scale(10);
+	  opacity: 1;
+	  fill: #dd4688;
+	}
+	55% {
+	  transform: scale(11);
+	  opacity: 1;
+	  fill: #d46abf;
+	}
+	65% {
+	  transform: scale(12);
+	  opacity: 1;
+	  fill: #cc8ef5;
+	}
+	75% {
+	  transform: scale(13);
+	  opacity: 1;
+	  fill: transparent;
+	  stroke: #cc8ef5;
+	  stroke-width: 0.5;
+	}
+	85% {
+	  transform: scale(17);
+	  opacity: 1;
+	  fill: transparent;
+	  stroke: #cc8ef5;
+	  stroke-width: 0.2;
+	}
+	95% {
+	  transform: scale(18);
+	  opacity: 1;
+	  fill: transparent;
+	  stroke: #cc8ef5;
+	  stroke-width: 0.1;
+	}
+	100% {
+	  transform: scale(19);
+	  opacity: 1;
+	  fill: transparent;
+	  stroke: #cc8ef5;
+	  stroke-width: 0;
+	}
+}
+
+@keyframes animateHeart {
+	0% {
+	  transform: scale(0.2);
+	}
+	40% {
+	  transform: scale(1.2);
+	}
+	100% {
+	  transform: scale(1);
+	}
+  }
+
+  @keyframes animateHeartOut {
+	0% {
+	  transform: scale(1.4);
+	}
+	100% {
+	  transform: scale(1);
+	}
+}
+/* for icon heart*/
+/*/////////////////////// end card buy prodcut///////////////////////////////////*/
+/*/////////////////////////////////////////////////////////
+				end style page buy product
+*//*/////////////////////////////////////////////////////////*/
+
+
+
+/*/////////////////////////////////////////////////////////
+				start style page chart
+*//*/////////////////////////////////////////////////////////*/
+.card .card-body .price1 strong{
+	color: #86ba09;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.card .card-body .price1 a{
+	display: inline-block;
+    color: #f7525a;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.card .card-body .price1 del{
+	text-decoration: line-through;
+    font-weight: 300;
+    font-size: 17px;
+}
+.card .card-body .icon-trash{
+	font-size: 20px;
+	float: left;
+}
+
+.card .card-body .search a{
+	background: none !important;
+	border: none !important;
+	color: #000 !important;
+}
+.card .card-body .search button{
+	background-color: #86ba09;
+	border: none !important;
+}
+/*/////////////////////////////////////////////////////////
+				end style page chart
+*//*/////////////////////////////////////////////////////////*/
