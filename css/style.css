@@ -128,6 +128,16 @@ ul.dropdown-menu.show{
 .navbar ul li form:hover input{
 	display: block;
 }
+/*/// for responsive For sizes smaller than a tablet header .navbar .button-icon1 li  form i 
+@media (min-width: 320px) and (max-width: 768px){
+	header .navbar .modal .modal-dialog .modal-content{
+		display: none !important;
+	}
+}
+///*/
+
+
+
 /*/////////////// end box search animation ///////////////*/
 
 /*/////////////// start style modal ///////////////*/
@@ -413,12 +423,18 @@ ul.dropdown-menu.show{
   	font-size: 22px;
   }
 }
-/*/////////////// end style carousel transition: transform 1s, filter 2s ease-in-out;
+/*/////////////// end style carousel ///////////////*/
+/*///////////////
+transition: transform 1s, filter 2s ease-in-out;
 	filter: blur(2px);
-	transform: scale(0.9);///////////////*/
+	transform: scale(0.9);
+///////////////*/
 
-/*/////////////// start style box Discount filter: blur(0);
-  	transform: scale(1);///////////////*/
+/*/////////////// start style box Discount ///////////////*/
+/*///////////////
+filter: blur(0);
+  	transform: scale(1);
+///////////////*/
 .card .card-img {
 	overflow: hidden;
 }
@@ -446,7 +462,6 @@ ul.dropdown-menu.show{
 .card-img-custom {
 	position: relative;
 }
-
 .card-img-custom .overlay-img-card {
 	position: absolute;
 	top: 0;
@@ -487,8 +502,8 @@ ul.dropdown-menu.show{
 	transition: 0.3s;
 	opacity: 0;
 	visibility: visible;
-	border-radius: 15px;
-	font-size: 13px;
+	border-radius: 15px !important;
+	font-size: 22px !important;
 	color: #86ba09 !important;
 	background: #fff;
 	font-weight: 300;
@@ -498,7 +513,6 @@ ul.dropdown-menu.show{
 }
 .hover-card .overlay4 a:hover{
 	color: #fff !important;
-    background: #86ba09;
 	border: 1px solid #2980b9;
 }
 .hover-card:hover .overlay4{
@@ -515,7 +529,6 @@ ul.dropdown-menu.show{
 	background-color: transparent;
 	border-radius: 20px;
 }
-
 @media (min-width: 320px) and (max-width: 576px){
 	main .size-media{
 		width: 400px;
@@ -668,20 +681,13 @@ ul.dropdown-menu.show{
 				START style page ABOUT
 *//*/////////////////////////////////////////////////////////*/
 
-/*/////////////// START   IMAGE DOWN HEADER ///////////////
-@media screen and (max-width: 768px) {
-	.carousel {
-	  display: none;
-	}
-}
-*/
+/*//// start responsive for banner ///*/
 @media (min-width: 320px) and (max-width: 768px){
 	.carousel-custom{
 		display: none;
 	}
 }
-/*/////////////// START   IMAGE DOWN HEADER ///////////////*/
-
+/*//// end responsive for banner ///*/
 
 /*/////////////// START ABOUT US ///////////////*/
 .container .card-horizontal .card-title{
@@ -704,149 +710,207 @@ ul.dropdown-menu.show{
 
 
 /*/////////////// START Our services ///////////////*/
-.our-services .our-services1 .card{
-	border-radius: 4px;
-    background: #fff;
-    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
-    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
-  	padding: 14px 80px 18px 36px;
-  	cursor: pointer;
+.our-ser .container .card {
+    max-width: 300px;
+    height: 215px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out
 }
-.our-services .our-services1 .card:hover{
-	transform: scale(1.09);
-  	box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+
+.our-ser .container .card:hover {
+    height: 450px
 }
-.our-services .card .badge{
-	position: absolute;
-    right: 0px;
-    top: 0px;
-    padding: 12px 15px;
-    border-radius: 0 0 0 26px;
-    font-size: 14px;
-}
-.our-services .card{
-	border:0px;
-	height: 100%;
-}
-.our-services .our-services1 .card h5{
-	text-transform: capitalize;
-	font-size: 18px;
-    font-weight: 500;
-    margin: 5px 0 20px;
-}
-.our-services .our-services1 .card .card-text{
-	line-height: 170%;
-	font-size: 14px;
-}
-.our-services .card .card-title{
+.our-ser .card h4{
 	font-weight: bold;
+	font-size: 22px;
+}
+.our-ser .card p{
+	line-height: 190%;
+}
+
+
+.our-ser .container .card .imgContainer {
+    position: relative;
+    width: 250px;
+    top: -50px;
+    left: 10px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.our-ser .container .card .imgContainer img {
+    max-width: 100%;
+    border-radius: 4px;
+	background-color: transparent;
+}
+
+.our-ser .container .card .content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+}
+
+.our-ser .container .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+@media (max-width: 330px) {
+    .our-ser .container .card .imgContainer {
+        left: -2px;
+    }
 }
 /*/////////////// END ABOUT US ///////////////*/
 
-
-
-/*/////////////// STRAT CARD DOWN Our services ///////////////*/
-.card-down .card .card-footer button{
-	padding: 9px 70px;
-	font-size: 14px;
+/*////////////// start help us ////////////////*/
+.help-us .cards .line1 {
+    color: #000;
+    font-size: 12px;
 }
-.card-down .card .card-footer button:hover{
-	transition: all 0.8s ease;
-	background-color: #86ba09;
-	color: #fff;
+.help-us .cards {
+    transition: all 0.2s ease;
+    cursor: pointer;
+	border-left: 1px solid rgb(145, 127, 127);
 }
-
-/*/////////////// END CARD DOWN Our services ///////////////*/
-
-
+.help-us .cards:hover {
+    box-shadow: 5px 6px 6px 2px #e9ecef;
+    transform: scale(1.1);
+}
+.help-us .cards h5{
+	font-size: 20px;
+	font-weight: bold;
+}
+.help-us .cards .first p{
+	font-size: 13.5px;
+	line-height: 200%;
+}
+/*////////////// end help us ////////////////*/
 
 /*/////////////// STRAT box meet our team ///////////////*/
-div.box{
-	padding: 0;
-}
-.box{
+.card-info  .container{
 	position: relative;
-	width: 450px;
-	perspective: 9000px;
-	transition: all 0.5s ease-in-out 0.5s;
-	margin-right: 390px;
-}
-.box:hover{
-	transform: scale(1.1);
-	box-shadow: 1px 2px 10px 5px solid #000;
-}
-.box .box-img{
-	transform: rotateY(0);
-	transition: all 0.5s ease-in-out 0s;
-}
-
-.box .box-img img{
-	width: 450px;
-	height: 480px;
-	border: 2px solid #000;
-	border-radius: 20px;
-}
-.box .content{
-	color: white;
-	background: rgba(0,0,0,0.8);
-	top: 0;
-	Left: 0;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	padding: 90px 20px;
-	box-sizing: border-box;
-	text-align: center;
-	border-radius: 10px;
-	transform: rotateY(90deg);
-	transition: all 0.5s ease-in-out 0s;
-}
-
-
-.box:hover .content{
-	transform: rotateY(0);
-}
-.box .content p{
-	border-top: 1px solid white;
-	border-bottom: 1px solid white;
-	padding: 20px 0;
-	margin: 0 25px;
-}
-
-.box .button{
-	background: none;
-	top: 0;
-	Left: 0;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	padding: 360px 50px;
-	box-sizing: border-box;
-	text-align: center;
+	display: flex;
+	justify-content: center;
 	align-items: center;
-	transform: rotateY(90deg);
-	transition: all 0.5s ease-in-out 0s;
+	flex-wrap: wrap;
+	min-height: 30vh;	
+}
+.card-info  .container .cards{
+	position: relative;
+	width: 300px;
+	height: 400px;
+	background: linear-gradient(#2196f3, #2196f3 30%,
+	#1d3548 30%, #1d3548);
+	margin: 10px;
+	border-radius: 20px;
+	overflow: hidden;
+}
+.card-info  .container .cards .imgbx{
+	position: absolute;
+	top: 0;
+	Left: 0;
+	width: 100%;
+	height: 100%;
+	transition: 0.5s;
+	z-index: 100000;
+	border-radius: 20px;
+	overflow: hidden;
+	transform-origin: top;
+}
+.card-info  .container .cards:hover .imgbx{
+	transform: translateY(10px) scale(0.5);
+}
+.card-info  .container .cards .imgbx img {
+	position: absolute;
+	top: 0;
+	Left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;	
 }
 
-.box:hover .button{
-	transform: rotateY(0);
+.card-info  .container .cards .content {
+	position: absolute;
+	top: 0;
+	Left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	padding-bottom: 10px;
+	transform: translateY(100%);
+	transition: 0.5s;
 }
-.box .button i{
-	list-style: none;
-	padding: 15px 0;
+.card-info  .container .cards:hover .content{
+	transform: translateY(0%);
 }
-.box .button i{
-	font-size: 20px;
-	color: white;
+
+
+.card-info  .container .cards .content .details{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;	
+}
+.card-info  .container .cards .content .details h2{
+	color: #fff;
+	font-size: 1.3em;
+	font-weight: 500;	
+}
+.card-info  .container .cards .content .details h2 span{
+	font-size: 0.8em;
+	font-weight: 400;
+	color: #03a9f4;	
+}
+.card-info  .container .cards .content .details .social-icons{
+	position: relative;
+	display: flex;
+	margin-top: 5px;	
+}
+.card-info  .container .cards .content .details .social-icons li{
+	List-style: none;
+	margin: 4px;	
+}
+.card-info  .container .cards .content .details .social-icons li a{
+	width: 45px;
+	height: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #294d69;
+	border-radius: 50%;
+	font-size: 1.5em;
+	color: #fff;
 	text-decoration: none;
-	border: 1px solid transparent;
-	padding: 20px 40px;
+	transition: 0.5s;	
+}
+.card-info  .container .cards .content .details .social-icons li a:hover{
+	transform: rotate(360deg);
+	background: #86ba09;
 }
 /*/////////////// END box meet our team ///////////////*/
 
 
 /*/////////////////////////////////////////////////////////
 				END style page ABOUT
+*//*/////////////////////////////////////////////////////////*/
+
+
+
+/*/////////////////////////////////////////////////////////
+				START style page Blog
 *//*/////////////////////////////////////////////////////////*/
 
 li.slick-active button {
@@ -1051,8 +1115,27 @@ li.slick-active button {
 	background-color: #ff5a60 !important;
 	color: #fff !important;
 }
+
+main .card-info .card .card-footer a{
+	color: #fff !important;
+}
+
+@media (min-width: 320px) and (max-width: 768px){
+	main .card-info .card .card-footer a{
+		font-size: 13px;
+		margin-left: 15px;
+	}
+}
+@media (min-width: 1440px){
+	main .card-info .card .card-body small{
+		font-size: 17px;
+	}
+	main .card-info .card .card-body a{
+		font-size: 23px;
+	}
+}
 /*/////////////////////////////////////////////////////////
-				START style page BLOG
+				end style page BLOG
 *//*/////////////////////////////////////////////////////////*/
 
 
@@ -1171,6 +1254,12 @@ li.slick-active button {
     padding-bottom: 200%;
     border-radius: 50%;
     cursor: pointer;
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+	.card .card-body .select-kg .circle{
+		width: 280px;
+	}
 }
 /*///////// end style slidebar left //////////*/
 /*/////////////////////////////////////////////////////////
@@ -1292,7 +1381,7 @@ li.slick-active button {
 	position: absolute;
 	display: block;
 	top: 5px;
-	width: 100%;
+	width: 75%;
 	height: 100%;
 	text-align: center;
 	line-height: center;
@@ -1305,6 +1394,13 @@ li.slick-active button {
 .card .card-body .box-chart #box span:nth-child(1){
 	display: initial;
 }
+@media (min-width: 320px) and (max-width: 768px){
+	.card .card-body .box-chart {
+		width: 120px;
+		margin-bottom: 30px;
+	}
+}
+
 /* for box افزون کیلو*/
 
 
@@ -1318,7 +1414,7 @@ li.slick-active button {
   	width: 250px;
   	margin: 0 auto;
   	position: relative;
-  	top: 50%;
+  	top: 60%;
   	transform: translateY(-65%);
   	border-radius: 2px;
 }
