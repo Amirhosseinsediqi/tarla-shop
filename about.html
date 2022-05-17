@@ -9,12 +9,13 @@
   <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap-rtl.css">
+  <link rel="icon" href="img/logo_about.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 <body>
 <!----------------------------start menu ------------------------------->
@@ -31,12 +32,11 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 mt-3">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#" style="color: #86ba09 !important;">خانه</a>
+              <a class="nav-link active" aria-current="page" href="/index.html">خانه</a>
             </li>
             
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">فروشگاه
-              </a>
+              <a class="nav-link dropdown-toggle" href="/Shop.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">فروشگاه</a>
               <ul class="dropdown-menu dropdown-menu-right text-right" aria-labelledby="navbarDropdown">
                 <div class="row">    
                   <div class="col-md-4 col-sm-6"> 
@@ -105,7 +105,7 @@
             </li>
             <div class="dropdown-about">
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">درباره ی ما</a>
+                <a class="nav-link dropdown-toggle" href="/about.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #86ba09 !important;">درباره ی ما</a>
                 <ul class="dropdown-menu dropdown-menu-right text-right" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="#">تحویل</a></li>
                   <li><hr class="dropdown-divider"></li>
@@ -122,12 +122,14 @@
               </li>
             </div>
             
-
             <li class="nav-item">
-              <a class="nav-link" href="#">مقالات</a>
+              <a class="nav-link" href="/Asked Questions.html">سوالات متداول</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">تماس با ما</a>
+              <a class="nav-link" href="/BLOG.html">مقالات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact-us.html">تماس با ما</a>
             </li>
           </ul>
         </div>
@@ -240,15 +242,16 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="img/banner-3.jpg" class="d-block w-100" alt="about">
+
         <div class="carousel-caption d-none d-md-block text-right mb-5">
-            <h5 style="font-weight: bold; font-size: 25px;">خانه <i class="fas fa-chevron-left align-middle" style="color: #7986CB;"></i>
-                <a href="#" style="color:#EEEEEE; font-weight: bold;font-size: 25px;">درباه ما</a>
-            </h5>
+          <a href="index.html" style="font-weight: bold; font-size: 25px;" class="breadcrumb-item">خانه <i class="fas fa-chevron-left align-middle" style="color: #7986CB;"></i> </a>
+          <a href="#" style="color:#EEEEEE; font-weight: bold;font-size: 25px;" class="breadcrumb-item"> فروشگاه </a>
         </div>
+        
       </div>
   </div>
 </div>
-<!---------------------------- END   IMAGE DOWN HEADER ------------------------------->
+<!---------------------------- END IMAGE DOWN HEADER ------------------------------->
 
 
 <!---------------------------- START ABOUT US------------------------------->
