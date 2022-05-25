@@ -32,16 +32,16 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 mt-3">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#" style="color: #86ba09 !important;">خانه</a>
+              <a class="nav-link active" aria-current="page" href="#">خانه</a>
             </li>
-            
+
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">فروشگاه
               </a>
               <ul class="dropdown-menu dropdown-menu-right text-right" aria-labelledby="navbarDropdown">
-                <div class="row">    
-                  <div class="col-md-4 col-sm-6"> 
-                    <label for="">سبزیجات</label>    
+                <div class="row">
+                  <div class="col-md-4 col-sm-6">
+                    <label for="">سبزیجات</label>
                     <li><a class="dropdown-item" href="#">سبزی</a></li>
                     <li><hr class="dropdown-divider"></li>
                     <li><a class="dropdown-item" href="#">گوجه</a></li>
@@ -62,7 +62,7 @@
                   </div>
 
                   <div class="col-md-4 col-sm-6">
-                    <label for="">گوشت ها</label>      
+                    <label for="">گوشت ها</label>
                     <li><a class="dropdown-item" href="#">گوسفند</a></li>
                     <li><hr class="dropdown-divider"></li>
                     <li><a class="dropdown-item" href="#">شتر</a></li>
@@ -76,11 +76,11 @@
                     <li><a class="dropdown-item" href="#">بوقلمون</a></li>
                     <li><hr class="dropdown-divider"></li>
                     <li><a class="dropdown-item" href="#">گاومیش</a></li>
-                    <div class="imgmega hover-mege-img ripple mb-4 mr-2 mt-4 rounded" data-mdb-ripple-color="light">
+                    <div class="imgmega hover-mege-img ripple mb-4 mt-4 rounded" data-mdb-ripple-color="light">
                       <img src="img/vegtables.jpg" class="img-fluid">
                     </div>
                   </div>
-                  
+
 
                   <div class="col-md-4 col-sm-6">
                     <label for="">خشکبار</label>
@@ -122,10 +122,12 @@
                 </ul>
               </li>
             </div>
-            
 
             <li class="nav-item">
-              <a class="nav-link" href="#">مقالات</a>
+              <a class="nav-link" href="/Asked Questions.html">سوالات متداول</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"  style="color: #86ba09 !important;">مقالات</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">تماس با ما</a>
@@ -274,7 +276,7 @@
               <input type="search" class="form-control" placeholder="جستجو ...">
               <a href="#" class="btn shadow"><i class="fas fa-search align-middle"></i></a>
               </div>
-            </form> 
+            </form>
           </div>
         </div>
         <div class="card border-0 shadow mt-3">
@@ -427,8 +429,10 @@
 					</div>
 					<div class="card-body">
 						<div class="d-flex flex-column flex-lg-row align-items-center mb-4 review">
-							<img src="img/inside_blog_people-3.jpg" class="img-fluid ml-2 rounded" alt="comments">
-							<div>
+              <div class="hover-zoom">
+							  <img src="img/inside_blog_people-3.jpg" class="img-fluid ml-2 rounded" alt="comments">
+              </div>
+                <div class="mr-3">
 								<div class="d-flex align-items-center">
 									<p class="mb-0"><i class="fa fa-user mb-0 ml-2" aria-hidden="true"></i>امیر حسین</p>
 									<div class="comment-form-stars mr-2 mt-3">
@@ -444,10 +448,12 @@
 									لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
 								</small>
 							</div>
-						</div> 
+						</div>
 						<div class="d-flex flex-column flex-lg-row align-items-center mb-4 review">
-							<img src="img/inside_blog_people-2.jpg" class="img-fluid ml-2 rounded" alt="comments">
-							<div>
+              <div class="hover-zoom">
+							  <img src="img/inside_blog_people-2.jpg" class="img-fluid ml-2 rounded" alt="comments">
+              </div>
+              <div class="mr-3">
 								<div class="d-flex align-items-center">
 									<p class="mb-0"><i class="fa fa-user mb-0 ml-2" aria-hidden="true"></i>امیر حسین</p>
 									<div class="comment-form-stars mr-2 mt-3">
@@ -465,8 +471,10 @@
 							</div>
 						</div>
 						<div class="d-flex flex-column flex-lg-row align-items-center mb-4 review">
-							<img src="img/inside_blog_people-1.jpg" class="img-fluid ml-2 rounded" alt="comments">
-							<div>
+              <div class="hover-zoom">
+							  <img src="img/inside_blog_people-1.jpg" class="img-fluid ml-2 rounded" alt="comments">
+							</div>
+                <div class="mr-3">
 								<div class="d-flex align-items-center">
 									<p class="mb-0"><i class="fa fa-user mb-0 ml-2" aria-hidden="true"></i>امیر حسین</p>
 									<div class="comment-form-stars mr-2 mt-3">
@@ -588,15 +596,6 @@
               </div>
           </div>
       </div>
-
-
-
-
-
-
-
-
-
       </div>
     </div>
   </div>
@@ -613,15 +612,16 @@
   <!-- Grid container -->
   <div class="container p-4 pb-0">
     <!-- Section: Form -->
-    <section class="">
+    <section>
+      <label class="my-2 text-muted" style="font-weight: bold; color: #fff !important;"> عضویت در خبرنامه </label>
       <form action="">
         <!--Grid row-->
         <div class="row d-flex justify-content-center">
           <!--Grid column-->
-          <div class="col-md-5 col-12">
+          <div class="col-md-5 col-12 col-lg-8 col-md-8 col-sm-6">
             <!-- Email input -->
-            <div class="form-outline mb-4">
-              <input type="email" id="form5Example2" class="form-control" placeholder="ایمیل"/>
+            <div class="input-group mb-4">
+              <input type="email" id="form5Example2" class="form-control" placeholder="لطفا ایمیل خود را وارد کنید . . ."/>
             </div>
           </div>
 
@@ -640,7 +640,7 @@
   </div>
   <!-- Grid container -->
 </footer>
-  
+
 </div>
 <!-- End of .container -->
 

@@ -5,10 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/slick.css">
-  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap-rtl.css">
+  <link rel="stylesheet" type="text/css" href="css/hover-min.css">
   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
@@ -33,14 +32,14 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#" style="color: #86ba09 !important;">خانه</a>
             </li>
-            
+
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">فروشگاه
               </a>
               <ul class="dropdown-menu dropdown-menu-right text-right" aria-labelledby="navbarDropdown">
-                <div class="row">    
-                  <div class="col-md-4 col-sm-6"> 
-                    <label for="">سبزیجات</label>    
+                <div class="row">
+                  <div class="col-md-4 col-sm-6">
+                    <label for="">سبزیجات</label>
                     <li><a class="dropdown-item" href="#">سبزی</a></li>
                     <li><hr class="dropdown-divider"></li>
                     <li><a class="dropdown-item" href="#">گوجه</a></li>
@@ -61,7 +60,7 @@
                   </div>
 
                   <div class="col-md-4 col-sm-6">
-                    <label for="">گوشت ها</label>      
+                    <label for="">گوشت ها</label>
                     <li><a class="dropdown-item" href="#">گوسفند</a></li>
                     <li><hr class="dropdown-divider"></li>
                     <li><a class="dropdown-item" href="#">شتر</a></li>
@@ -75,11 +74,11 @@
                     <li><a class="dropdown-item" href="#">بوقلمون</a></li>
                     <li><hr class="dropdown-divider"></li>
                     <li><a class="dropdown-item" href="#">گاومیش</a></li>
-                    <div class="imgmega hover-mege-img ripple mb-4 mr-2 mt-4 rounded" data-mdb-ripple-color="light">
+                    <div class="imgmega hover-mege-img ripple mb-4 mt-4 rounded" data-mdb-ripple-color="light">
                       <img src="img/vegtables.jpg" class="img-fluid">
                     </div>
                   </div>
-                  
+
 
                   <div class="col-md-4 col-sm-6">
                     <label for="">خشکبار</label>
@@ -121,8 +120,10 @@
                 </ul>
               </li>
             </div>
-            
 
+            <li class="nav-item">
+              <a class="nav-link" href="/Asked Questions.html">سوالات متداول</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="#">مقالات</a>
             </li>
@@ -253,82 +254,107 @@
 
 
 
-<!---------------------------- START slidebar left ------------------------------->
-<main class="mt-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-4">
-        <div class="card border-0 shadow">
-      <div class="card-header bg-transparent border-0 pb-1 category-p">
-        <p class="mb-4 pt-3 text-center p-shop"><strong>خانه</strong></p>
-      </div>
-      <div class="card-body">
-        <form class="search">
-                <a class="nav-link" href="#" style="font-size: 15px;">1  خرید <small style="float: left;">۵۳۰,۰۰۰</small></a>
-                <a class="nav-link" href="#" style="font-size: 15px;"> حمل<small style="float: left;">۱۳۰,۰۰۰</small></a>
-                <hr>
-                <a class="nav-link" href="#" style="font-size: 18px;"> جمع هزینه<small style="float: left;">۶۶۰,۰۰۰</small></a>
-            <button type="button" class="btn btn-primary btn-ml btn-block my-2 mt-4" style="padding: 10px 100px;width: 100%;">خرید</button>
-        </form>
-      </div>
-        </div>
-      </div>
-<!---------------------------- end slidebar left ------------------------------->
-
-<!---------------------------- start filter ------------------------------->
-
-      <div class="col-12 col-lg-8">
-        <div class="card border-0  shadow mb-3">
-          <div class="card-body d-flex flex-column flex-lg-row justify-content-center align-items-center justify-content-between">
-            سبد خرید
-            <i class="fa-solid fa-cart-arrow-down"></i>
-          </div>
-        </div>
-<!---------------------------- end filter ------------------------------->
-
-<!---------------------------- start cards ------------------------------->
-<div class="row">
-  <div class="col-12">
-    <a href="#" class="text-dark">
-      <div class="card border-0 shadow mb-3">
-        <div class="card-body d-flex flex-column flex-lg-row align-items-center listing overlay-category">
-          <div class="position-relative">
-            <a href="#">
-              <img src="img/framed-poster(4).jpg" class="img-fluid" alt="chart">
-            </a>
-          </div>
-          <div class="mt-3 mt-lg-0 mr-lg-3 flex-fill">
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="price1">
-                <strong>۵۳۰,۰۰۰</strong><br>
-                <a>(تخفیف 20%)</a>&nbsp;<del>۷۶۰,۰۰۰</del>
+<!---------------------------- START INFORMATION chart ------------------------------->
+<main>
+  <div class="container my-5">
+      <div class="row">
+          <div class="col-12">
+              <div>
+                  <table class="table table-striped table-borderless text-center price-table"> 
+                      <thead>
+                          <tr>
+                              <th>
+                                  <p class="mb-0"> ردیف : </p> <small class="mb-0">Sort</small>
+                              </th>
+                              <th>
+                                  <p class="mb-0"> عنوان محصول : </p> <small class="mb-0">Product title</small>
+                              </th>
+                              <th>
+                                  <p class="mb-0">  تعداد : </p> <small class="mb-0">Number</small>
+                              </th>
+                              <th>
+                                  <p class="mb-0">  قیمت کل : </p> <small class="mb-0">Total Price</small>
+                              </th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <th> 1 </th>
+                              <td>نان لواش کد 1244</td>
+                              <td> 
+                                  <div class="d-flex align-items-center justify-content-center">
+                                      <a href="#" class="ml-1"> <i class="fas fa-plus-circle"></i> </a>
+                                      <input type="text" class="form-control form-control-sm rounded-pill text-center"
+                                       value="1" style="width: 40%;">
+                                      <a href="#" class="mr-1"> <i class="fas fa-minus-circle"></i> </a>
+                                  </div>    
+                              </td>
+                              <td> 65.000.000 تومان </td>
+                          </tr>
+                          <tr>
+                              <th> 1 </th>
+                              <td>نان لواش کد 1244</td>
+                              <td> 
+                                  <div class="d-flex align-items-center justify-content-center">
+                                      <a href="#" class="ml-1"> <i class="fas fa-plus-circle"></i> </a>
+                                      <input type="text" class="form-control form-control-sm rounded-pill text-center"
+                                       value="1" style="width: 40%;">
+                                      <a href="#" class="mr-1"> <i class="fas fa-minus-circle"></i> </a>
+                                  </div>    
+                              </td>
+                              <td> 65.000.000 تومان </td>
+                          </tr>
+                          <tr>
+                              <th> 1 </th>
+                              <td>نان لواش کد 1244</td>
+                              <td> 
+                                  <div class="d-flex align-items-center justify-content-center">
+                                      <a href="#" class="ml-1"> <i class="fas fa-plus-circle"></i> </a>
+                                      <input type="text" class="form-control form-control-sm rounded-pill text-center"
+                                       value="1" style="width: 40%;">
+                                      <a href="#" class="mr-1"> <i class="fas fa-minus-circle"></i> </a>
+                                  </div>    
+                              </td>
+                              <td> 65.000.000 تومان </td>
+                          </tr>
+                          <tr>
+                              <th> 1 </th>
+                              <td>نان لواش کد 1244</td>
+                              <td> 
+                                  <div class="d-flex align-items-center justify-content-center">
+                                      <a href="#" class="ml-1"> <i class="fas fa-plus-circle"></i> </a>
+                                      <input type="text" class="form-control form-control-sm rounded-pill text-center"
+                                       value="1" style="width: 40%;">
+                                      <a href="#" class="mr-1"> <i class="fas fa-minus-circle"></i> </a>
+                                  </div>    
+                              </td>
+                              <td> 65.000.000 تومان </td>
+                          </tr>
+                          <tr>
+                              <th> 1 </th>
+                              <td>نان لواش کد 1244</td>
+                              <td> 
+                                  <div class="d-flex align-items-center justify-content-center">
+                                      <a href="#" class="ml-1"> <i class="fas fa-plus-circle"></i> </a>
+                                      <input type="text" class="form-control form-control-sm rounded-pill text-center"
+                                       value="1" style="width: 40%;">
+                                      <a href="#" class="mr-1"> <i class="fas fa-minus-circle"></i> </a>
+                                  </div>    
+                              </td>
+                              <td> 65.000.000 تومان </td>
+                          </tr>
+                      </tbody>
+                  </table>
+                  <button class="btn edamekharid hvr-shrink"> ادامه ی خرید در سایت </button>
+                  <br><br>
+                  <button class="btn edamekharid1 hvr-shrink"> تکمیل خرید و پرداخت </button>
               </div>
-            </div>
-            <b class="d-block text-danger mb-3">
-              <a href="#" class="text-dark ">نان لواش با ارد سبوسدار</a>
-            </b>
-            
-            <div class="d-flex justify-content-between align-items-center mt-2">
-              <small class="text-muted">
-                <i class="fas fa-user align-middle ml-1"></i>
-                 فروشنده: سعید حسین زاده
-              </small>
-              
-            </div>
-            <small class="text-muted icon-trash">
-              <a href="#" class="btn btn-dark">
-                <i class="align-middle ml-1 fa-solid fa-trash" ></i>
-              </a>
-            </small>
           </div>
-        </div>
       </div>
-      <button type="button" class="btn btn-primary btn-ml btn-block my-2 mt-4" style="padding: 10px 100px; float: left;">ادامه خرید<i class="fa-solid fa-arrow-left mr-2"></i></button>
-    </a>
   </div>
-</div>
 </main>
-<!---------------------------- END INFORMATION ABOUT ------------------------------->
+
+<!---------------------------- END INFORMATION chart  ------------------------------->
 
 
 
@@ -339,15 +365,16 @@
   <!-- Grid container -->
   <div class="container p-4 pb-0">
     <!-- Section: Form -->
-    <section class="">
+    <section>
+      <label class="my-2 text-muted" style="font-weight: bold; color: #fff !important;"> عضویت در خبرنامه </label>
       <form action="">
         <!--Grid row-->
         <div class="row d-flex justify-content-center">
           <!--Grid column-->
-          <div class="col-md-5 col-12">
+          <div class="col-md-5 col-12 col-lg-8 col-md-8 col-sm-6">
             <!-- Email input -->
-            <div class="form-outline mb-4">
-              <input type="email" id="form5Example2" class="form-control" placeholder="ایمیل"/>
+            <div class="input-group mb-4">
+              <input type="email" id="form5Example2" class="form-control" placeholder="لطفا ایمیل خود را وارد کنید . . ."/>
             </div>
           </div>
 
@@ -366,7 +393,7 @@
   </div>
   <!-- Grid container -->
 </footer>
-  
+
 </div>
 <!-- End of .container -->
 
