@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-rtl.css">
+  <link rel="icon" href="img/logo_tabeset.png" type="image/x-icon">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+  <!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="css/util.css">
+
+</head>
+<body>
+<!----------------------------start menu ------------------------------->
+<header>
+<!-- Start Menu -->
+
+<!-- partial:index.partial.html -->
+<div class="header-top bg-white py-4">
+  <div class="container">
+      <div class="row align-items-center">
+          <div class="col-12 col-lg-3 text-center text-lg-right">
+              <h3 class="mb-0">
+                  <a href="#"> <img src="img/beatuiful-my-logo-2.jpg" class="img-fluid" alt="logo" width="200" height="300" > </a>
+              </h3>
+          </div>
+
+          <div class="col-12 col-lg-6">
+              <form action="">
+                  <div class="p-1 bg-light rounded rounded-pill shadow-sm">
+                      <div class="input-group">
+                        <input type="search" placeholder="جستجوی محصول 📦" aria-describedby="button-addon1" class="form-control border-0 bg-light">
+                        <div class="input-group-append">
+                          <button id="button-addon1" type="submit" class="btn btn-link text-primary"><i class="fa fa-search"></i></button>
+                        </div>
+                      </div>
+                  </div>
+              </form>
+          </div>
+
+          <div class="col-12 col-sm-3 row  justify-content-center justify-content-lg-end mt-md-2" >
+            <div class="page-content page-container" id="page-content">
+                  <a href="#" id="animatebutton" class="btn button-bu  btn-icon-text animatebutton">ورود/ثبت نام </a>
+                  <a href="#" id="animatebutton2" class="btn button-bu btn-icon-text animatebutton2">سبد خرید</a>
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<nav class="navbar navbar-expand-custom navbar-mainbg">
+  <a class="navbar-brand navbar-logo" href="#">Tarla</a>
+  <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-bars text-white"></i>
+    </button>
+  <div class="collapes navbar-collapse justify-content-right text-right" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="javascript:void(0);"><i class="fa-solid fa-house pl-2"></i>خانه</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="javascript:void(0);"><i class="fa-solid fa-shop pl-2"></i>فروشگاه</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="javascript:void(0);"><i class="fa-solid fa-info pl-2"></i>درباره ما</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="javascript:void(0);"><i class="fa-solid fa-question pl-2"></i>سوالات متداول</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="javascript:void(0);"><i class="fa-solid fa-blog pl-2"></i>مقالات</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="javascript:void(0);"><i class="fa-solid fa-phone pl-2"></i>تماس با ما</a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+</header>
+<!---------------------------- end  menu ------------------------------->
+
+<!--main form-->
+<main style="background-image: url(img/back-login-page.jpg);">
+  <div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
+				<form class="login100-form validate-form">
+					<span class="login100-form-title p-b-49">
+            ورود به تارلا
+					</span>
+
+					<div class="wrap-input100 validate-input m-b-23" data-validate = "Username is reauired">
+						<span class="label-input100" style="float: right;">ایمیل یا شماره موبایل</span>
+            <input class="input100" type="email" name="username" placeholder="لطفا ایمیل یا شماره موبایل خود را وارد کنید . . ." style="color: white;">
+						<i class="fa-solid fa-user-astronaut"></i>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Password is required">
+						<span class="label-input100" style="float: right;">رمز عبور</span>
+						<input class="input100" type="password" name="pass" placeholder="رمز عبور خود را وارد کنید . . ." style="color: white;">
+            <i class="fa-solid fa-lock"></i>
+          </div>
+
+					<div class="text-right p-t-8 p-b-31">
+						<a href="#" style="color: #fff !important;">
+							رمز عبور خود را فراموش کرده اید ؟!
+
+						</a>
+					</div>
+
+					<div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+							<button class="login100-form-btn" type="submit">
+								ورود به تارلا
+							</button>
+						</div>
+					</div>
+
+					<div class="txt1 text-center p-t-54 p-b-20" style="color: #fff;">
+						<span>
+							ورود با
+						</span>
+					</div>
+
+					<div class="flex-c-m">
+						<a href="#" class="login100-social-item bg1 pl-2">
+							<i class="fa-brands fa-facebook-f"></i>
+						</a>
+
+						<a href="#" class="login100-social-item bg2 pl-2">
+							<i class="fa-brands fa-twitter"></i>
+						</a>
+
+						<a href="#" class="login100-social-item bg3 pl-2">
+							<i class="fa-brands fa-google"></i>
+						</a>
+					</div>
+
+					<div class="flex-col-c p-t-120">
+						<span class="txt1 p-b-17">
+							تاکنون ثبت نام نکرده اید ؟!
+						</span>
+
+						<a href="#" class="txt2">
+							ثبت نام در تارلا
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="dropDownSelect1"></div>
+
+</main>
+<!--main form-->
+
+
+
+
+<!----------------------------- start footer ------------------------------>
+<!-- Remove the container if you want to extend the Footer to full width. -->
+<div>
+  <footer class="text-center" style="background-color: #9E9D24;">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Form -->
+    <section>
+      <label class="my-2 text-muted" style="font-weight: bold; color: #fff !important;"> عضویت در خبرنامه </label>
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-md-5 col-12 col-lg-8 col-md-8 col-sm-6">
+            <!-- Email input -->
+            <div class="input-group mb-4">
+              <input type="email" id="form5Example2" class="form-control" placeholder="لطفا ایمیل خود را وارد کنید . . ."/>
+            </div>
+          </div>
+
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary mb-4">
+              ارسال
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+  </div>
+  <!-- Grid container -->
+</footer>
+
+</div>
+<!-- End of .container -->
+
+
+<div class="mt-0">
+  <footer class="text-center text-lg-start text-white" style="background-color: #86ba09;">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row my-4">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+
+          <div class="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 150px; height: 150px;">
+            <h2 class="text-dark">logo</h2>
+          </div>
+
+          <p class="text-center">فروش محصولات سالم</p>
+
+          <ul class="list-unstyled d-flex flex-row justify-content-center">
+            <li>
+              <a class="text-white px-2" href="#!" style="font-size: 25px;">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a class="text-white pl-2" href="#!" style="font-size: 25px;">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a class="text-white ps-2" href="#!" style="font-size: 25px;">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">درباره دهکالا</h5>
+
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <p style="font-size: 14px; line-height: 250%;">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">لینک های مرتبط</h5>
+
+          <ul class="list-unstyled text-lg-center">
+            <li class="mb-2">
+              <a href="#!" class="text-white">درباره ما</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white">تماس با ما</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white">راهنمای مشتریان</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white">قوانین ما</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-white">پشتیبانی</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-4">ارتباط با ما</h5>
+          <ul class="list-unstyled">
+            <li>
+              <p style="font-size: 15px;"><i class="fas fa-map-marker-alt pe-2"></i>&nbsp;ایران,تبریز,مرند,روستای گلین قیه</p>
+            </li>
+            <li>
+              <p><i class="fas fa-phone pe-2"></i>&nbsp;+98 99-178-47512</p>
+            </li>
+            <li>
+              <p><i class="fas fa-envelope pe-2 mb-0"></i>&nbsp;sediqi.ah@gmail.com</p>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      Copyright 2022 - Tarla Co©
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+</div>
+<!-- End of .container -->
+
+<!----------------------------- end footer ------------------------------>
+<script src="js/script.js"></script>
+<script src="js/script_site.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="https://code.iconify.design/2/2.2.0/iconify.min.js"></script>
+
+
+<!--for carousel slider card Blog-->
+<script type="text/javascript">
+  $('.main-carousel').flickity({
+  // options
+  cellAlign: 'left',
+  wrapAround: true,
+  freeScroll: true
+});
+</script>
+</body>
+</html>
